@@ -109,7 +109,8 @@ struct AddTodoView: View {
         }.padding()
         
         Button(action: {
-            self.showAddTodoView = false // toggle the showAddTodoView from this view
+            // toggle the showAddTodoView from this view
+            self.showAddTodoView = false
             
             // append new item to the orignial todos
             todos.append(Todo(category: categoryTypes[selectedCategory], name:name ))
